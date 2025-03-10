@@ -35,11 +35,27 @@ header img{
     cursor:default;
 }
 
-.imagecarousel{
-    width: 75vw;
+#spacer{
+    width: 5em;
+}
+
+.studiodesc{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.splitter{
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
+}
+
+.imagecarousel{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
 }
 
 .imagecarousel img{
@@ -48,4 +64,9 @@ header img{
 
 #next{
     position: absolute;
+}
+
+#prev{
+    position: absolute;
+    display: block;
 }

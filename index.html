@@ -26,9 +26,16 @@
     </header>
 
     <main>
+        <h1 class="studiodesc">Indie tabletop studio making party games with an educational twist</h1>
+        <hr class="splitter">
         <div class="imagecarousel">
             <img class="carimages" id="currentimage" src="images/tempimages/1.png">
-            <button id="next" onclick="nextImage()">NextImage</button>
+            <button id="next" onclick="nextImage()">></button>
+            <button id="prev" onclick="prevImage()"><</button>
+            <br> <br>
+            <input class="carradio" type="radio" name="carousel" id="1" checked onchange="changeImage()">
+            <input class="carradio" type="radio" name="carousel" id="2" onchange="changeImage()">
+            <input class="carradio" type="radio" name="carousel" id="3" onchange="changeImage()">
         </div>
 
         <script src="index.js"></script>

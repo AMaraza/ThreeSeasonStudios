@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66ea6207f2.js" crossorigin="anonymous"></script>
     <title>Three Season Studios</title>
 </head>
 <body>
     <header>
         <div class="headcontainer">
-            <img id="logo" src="images/TSSLogo.png">
+            <a href="index.html"><img id="logo" src="images/TSSLogo.png"></a>
             <div class="navbarcontainer">
-                <h3 class="navbar">Home</h3>
+                <h3 class="navbar" id="currentpage">Home</h3>
                 <h3 class="space">|</h3>
                 <h3 class="navbar">Our Games</h3>
                 <h3 class="space">|</h3>
@@ -21,22 +28,35 @@
                 <h3 class="space">|</h3>
                 <h3 class="navbar">About</h3>
             </div>
-            <div id="spacer"></div>
+            <div id="spacer">
+                <a href="https://www.instagram.com/crabitatcombo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://bsky.app/profile/crabitatcombo.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://www.youtube.com/channel/UC3FpW8-JcUYG2O4PH2HqXjA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@crabitatcombo" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
     </header>
 
     <main>
-        <h1 class="studiodesc">Indie tabletop studio making party games with an educational twist</h1>
+        <br>
+        <br>
+        <h1 class="studiodesc">Indie tabletop studio making</h1>
+        <h1 class="studiodesc">party games with an educational twist</h1> <br><br>
         <hr class="splitter">
         <div class="imagecarousel">
             <img class="carimages" id="currentimage" src="images/tempimages/1.png">
-            <button class="imagearrow" id="next" onclick="nextImage()">></button>
-            <button class="imagearrow" id="prev" onclick="prevImage()"><</button>
-            <br> <br>
-            <input class="carradio" type="radio" name="carousel" id="1" checked onchange="changeImage()">
-            <input class="carradio" type="radio" name="carousel" id="2" onchange="changeImage()">
-            <input class="carradio" type="radio" name="carousel" id="3" onchange="changeImage()">
+            <div class="imagecontrols">
+                <button class="imagearrow" id="prev" onclick="prevImage()"><</button>
+                <div class="radiocontainer">
+                    <input class="carradio" type="radio" name="carousel" id="1" checked onchange="changeImage()">
+                    <input class="carradio" type="radio" name="carousel" id="2" onchange="changeImage()">
+                    <input class="carradio" type="radio" name="carousel" id="3" onchange="changeImage()">
+                </div>
+                <button class="imagearrow" id="next" onclick="nextImage()">></button>
+            </div>
         </div>
+
+        <hr class="splitter">
 
         <script src="index.js"></script>
     </main>

@@ -2,19 +2,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Fredoka;
+}
+
+body{
+    background-color: #F8F1E5;
 }
 
 .headcontainer{
     width: 100vw;
-    background-color: gray;
+    background-color: #a8d5cc;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 3px solid black;
+    color: #333333;
 }
 
 header img{
     width: 8em;
     padding: 10px;
+}
+
+header a{
+    text-decoration: none;   
+}
+
+header a:visited{
+    color: black;
 }
 
 .navbarcontainer{
@@ -25,53 +40,81 @@ header img{
     display: inline;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .navbarcontainer .navbar:hover{
-    background-color: lightgray;
+    background-color: #ffefc2;
+}
+
+#currentpage{
+    background-color: #FAF3E0;
 }
 
 .space{
     cursor:default;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 #spacer{
-    width: 5em;
+    font-size: 1.5em;
+    cursor: default;
+}
+#spacer i{
+    padding: 5px;
+    color: #333333;
+}
+
+#spacer i:hover{
+    background-color: #ffefc2;
+    border-radius: 10px;
 }
 
 .studiodesc{
     text-align: center;
-    margin-top: 2em;
+    font-family: Quicksand;
+    color: #4A3C31;
+    font-weight: bold;
+    font-size: 3em;
 }
 
 .splitter{
-    width: 75%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
 }
 
 .imagecarousel{
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     position: relative;
+    height: auto;
 }
 
 .imagecarousel img{
     width: 100%;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.imagecarousel:hover .imagecontrols{
+    visibility: visible;
 }
 
 .imagearrow{
-    visibility: visible;
-    position: absolute;
-    color: lightgray;
-    border: none;
-    border-radius: 5px;
-    font-size: 2em;
+    background-color: #FF7F50;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1.5em;
     padding: .5em;
+    display: block;
 }
 
 .imagearrow:hover{
@@ -79,23 +122,27 @@ header img{
 }
 
 .carradio{
-    visibility: hidden;
+    display: block;
+    background-color: white;
+    accent-color: #FF7F50;
+    margin: .3em;
 }
-
-.carimages:hover ~ .carradio{
-    visibility: visible;
-}
-
-/*.carimages:hover ~ .imagearrow{
-    visibility: visible;
-}*/
 
 .carimages{
     z-index: 2;
 }
 
-.imageoverlay{
-    position: absolute;
-    top: 0px;
-    z-index: 3;
+.imagecontrols{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    visibility: hidden;
+    transform: translateY(-5em);
+}
+
+.radiocontainer{
+    display: flex;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
 }

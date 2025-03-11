@@ -60,4 +60,5 @@ function changeImage(){
 }
 
 
+
 setInterval(nextImage, 5000);

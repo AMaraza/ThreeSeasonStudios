@@ -16,6 +16,7 @@ header img{
     width: 8em;
     padding: 10px;
 }
+
 .navbarcontainer{
     display: flex;
 }
@@ -56,17 +57,45 @@ header img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
+    position: relative;
 }
 
 .imagecarousel img{
     width: 100%;
 }
 
-#next{
+.imagearrow{
+    visibility: visible;
     position: absolute;
+    color: lightgray;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    padding: .5em;
 }
 
-#prev{
+.imagearrow:hover{
+    color: white;
+}
+
+.carradio{
+    visibility: hidden;
+}
+
+.carimages:hover ~ .carradio{
+    visibility: visible;
+}
+
+/*.carimages:hover ~ .imagearrow{
+    visibility: visible;
+}*/
+
+.carimages{
+    z-index: 2;
+}
+
+.imageoverlay{
     position: absolute;
-    display: block;
+    top: 0px;
+    z-index: 3;
 }

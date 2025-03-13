@@ -260,6 +260,7 @@ header a:visited{
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
     position: absolute;
+    text-align: right;
 }
 
 .gamedesc:hover{
@@ -269,6 +270,7 @@ header a:visited{
 
 .box{
     position: relative;
+    float: left;
     width: 20em;
     padding: 15px;
     border-radius: 25px;
@@ -276,6 +278,7 @@ header a:visited{
 
 .descheading{
     color: white;
-    padding: 15px;
-    display: inline;
+    padding: .8em;
+    display: inline-block;
+    margin-right: 3.5em;
 }

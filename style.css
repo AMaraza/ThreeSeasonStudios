@@ -90,6 +90,7 @@ header a:visited{
     color: #4A3C31;
     font-weight: 700;
     font-size: 3em;
+    text-shadow: 2px 2px 5px #7A4E2D;
 }
 
 .splitter{
@@ -113,7 +114,7 @@ header a:visited{
 }
 
 .imagecarousel img{
-    width: 50vw;
+    width: 45vw;
     border: 3px solid black;
     border-radius: 15px;
 }
@@ -276,9 +277,23 @@ header a:visited{
     border-radius: 25px;
 }
 
+.desctitle{
+    color: #FAF3E0;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 2em;
+}
+
 .descheading{
-    color: white;
+    color: #FAF3E0;
     padding: .8em;
     display: inline-block;
     margin-right: 3.5em;
+}
+
+.desctext{
+    text-align: center;
+    color: #FAF3E0;
+    padding-top: 2em;
+    font-size: 1.5em;
 }

@@ -29,7 +29,15 @@ header a{
     text-decoration: none;   
 }
 
+footer a{
+    text-decoration: none;
+}
+
 header a:visited{
+    color: black;
+}
+
+footer a:visited{
     color: black;
 }
 
@@ -90,7 +98,7 @@ header a:visited{
     color: #4A3C31;
     font-weight: 700;
     font-size: 3em;
-    text-shadow: 2px 2px 5px #7A4E2D;
+    text-shadow: 3px 3px 4px #7A4E2D;
 }
 
 .splitter{
@@ -125,16 +133,18 @@ header a:visited{
 
 .imagearrow{
     background-color: #0D8991;
-    color: black;
+    color: #FAF3E0;
     border-radius: 10px;
     border: 2px solid black;
     font-size: 1.5em;
     padding: .5em;
     display: block;
+    cursor: pointer;
 }
 
 .imagearrow:hover{
-    color: #FAF3E0;
+    color: #4A3C31;
+    background-color: #E3B23C;
 }
 
 .carradio{
@@ -181,7 +191,7 @@ header a:visited{
 }
 
 .post:hover{
-    background-color: #f3d6aa;
+    background-color: #efcf9e;
     cursor: pointer;
 }
 
@@ -195,7 +205,7 @@ header a:visited{
 }
 
 .event:hover{
-    background-color: #f3d6aa;
+    background-color: #efcf9e;
     cursor: pointer;
 }
 
@@ -296,4 +306,93 @@ header a:visited{
     color: #FAF3E0;
     padding-top: 2em;
     font-size: 1.5em;
+}
+
+.footcontainer{
+    background-color: #0D8991;
+    width: 100vw;
+    height: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socials{
+    padding: 5px;
+    color: #FAF3E0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.socials h3{
+    font-size: 1em;
+}
+
+.socials i{
+    padding: 5px;
+    color: #FAF3E0;
+    font-size: 1em;
+}
+
+.socials i:hover{
+    background-color: #E3B23C;
+    border-radius: 10px;
+    color: #4A3C31;
+}
+
+.sitemap li{
+    font-size: 1.3em;
+    color: #FAF3E0;
+}
+
+.sitemap ul{
+    list-style-type: none;
+}
+
+.sitemap #games{
+    margin-left: 1em;
+}
+
+.sitemap li:hover{
+    cursor: pointer;
+    color: #4A3C31;
+}
+
+.newsletter{
+    width: 25em;
+    height: auto;
+    background-color: #FAF3E0;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.newsletter h2{
+    display: inline-block;
+}
+
+.newsletter input{
+    width: 25em;
+    height: 3em;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter button{
+    width: 10em;
+    height: 3em;
+    color: #FAF3E0;
+    background-color: #0D8991;
+    font-size: .6em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.newsletter button:hover{
+    background-color: #E3B23C;
+    color: #4A3C31;
 }

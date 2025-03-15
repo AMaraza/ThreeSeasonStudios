@@ -372,6 +372,10 @@ footer a:visited{
     display: inline-block;
 }
 
+.newsletter h2{
+    color: #4A3C31;
+}
+
 .newsletter input{
     width: 25em;
     height: 3em;

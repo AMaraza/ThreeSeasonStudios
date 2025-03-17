@@ -17,6 +17,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 3px solid black;
+    border-top: 3px solid black;
     color: #FAF3E0;
 }
 
@@ -318,7 +319,6 @@ footer a:visited{
 
 .socials{
     padding: 5px;
-    color: #FAF3E0;
     font-size: 2em;
     text-align: center;
 }
@@ -372,7 +372,7 @@ footer a:visited{
     display: inline-block;
 }
 
-.newsletter h2{
+.footcontainer{
     color: #4A3C31;
 }
 
@@ -398,4 +398,12 @@ footer a:visited{
 .newsletter button:hover{
     background-color: #E3B23C;
     color: #4A3C31;
+}
+
+.fa-solid.fa-turn-down{
+    font-size: 1rem;
+}
+
+#navigate{
+    font-size: 2em;
 }

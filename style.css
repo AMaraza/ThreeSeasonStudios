@@ -9,6 +9,16 @@ body{
     background-color: #f7e7cb;
 }
 
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 .headcontainer{
     width: 100vw;
     background-color: #0f888e;
@@ -128,7 +138,8 @@ footer a:visited{
 }
 
 .imagecarousel:hover .imagecontrols{
-    visibility: visible;
+    animation: fadeIn .3s;
+    animation-fill-mode: forwards;
 }
 
 .imagearrow{
@@ -162,7 +173,8 @@ footer a:visited{
     display: flex;
     position: relative;
     justify-content: center;
-    visibility: hidden;
+    animation: fadeOut .3s;
+    animation-fill-mode: forwards;
     transform: translateY(-5em);
 }
 
@@ -259,9 +271,11 @@ footer a:visited{
 .crabitatlogo:hover{
     cursor: pointer;
 }
+
 .crabitatlogo:hover ~ .gamedesc{
     display: block;
 }
+
 
 .gamedesc{
     width: 50em;
@@ -269,14 +283,17 @@ footer a:visited{
     border-radius: 15px;
     border: 3px solid black;
     background-color: rgba(0, 0, 0, 0.7);
-    display: none;
     position: absolute;
     text-align: right;
+    opacity: 0;
+    animation: fadeOut .3s;
 }
 
 .gamedesc:hover{
     display: block;
     cursor: pointer;
+    animation: fadeIn 0.3s;
+    animation-fill-mode: forwards;
 }
 
 .box{

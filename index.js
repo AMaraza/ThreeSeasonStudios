@@ -59,9 +59,5 @@ function changeImage(){
     }
 }
 
-.dropdown{
-    
-}
-
 
 setInterval(nextImage, 5000);

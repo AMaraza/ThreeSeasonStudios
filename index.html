@@ -14,15 +14,16 @@
     <title>Three Season Studios</title>
 </head>
 <body>
+    <iframe name="ml_iframe" style="display:none;"></iframe>
     <header>
         <div class="headcontainer">
             <a href="index.html"><img id="logo" src="images/TSSLogo.png"></a>
             <div class="navbarcontainer">
                 <h3 class="navbar" id="currentpage">Home</h3>
                 <h3 class="space">|</h3>
-                <h3 class="navbar" id="ourgames">Crabitat Combo</h3>
+                <h3 class="navbar" id="ourgames">Our Games</h3>
                 <h3 class="space">|</h3>
-                <h3 class="navbar">Blog</h3>
+                <h3 class="navbar">Events</h3>
                 <h3 class="space">|</h3>
                 <h3 class="navbar">About</h3>
                 <h3 class="space">|</h3>
@@ -41,17 +42,25 @@
         <br>
         <br>
         <h1 class="studiodesc">Indie tabletop studio making</h1>
-        <h1 class="studiodesc">party games with an educational twist</h1> <br><br>
+        <h1 class="studiodesc">a variety of party games for any occasion</h1> <br><br>
         <hr class="splitter">
 
         <div class="container">
 
             <div class="blog" id="left">
                 <div class="post">
-                    <p>Most Recent Blog Post</p>
+                    <p>Upcoming Event</p>
+                    <br>
+                    <p class="eventdesc">Gaming Caravan</p>
+                    <p class="eventdesc">January 3rd, 2026</p>
+                    <p class="eventdesc">Oviedo, Florida</p>
                 </div>
                 <div class="event">
                     <p>Most Recent Event</p>
+                    <br>
+                    <p class="eventdesc">Holiday Matsuri</p>
+                    <p class="eventdesc">December 21-22nd, 2025</p>
+                    <p class="eventdesc">Orlando, Florida</p>
                 </div>
             </div>
 
@@ -98,17 +107,28 @@
                 <ul class="sitelist">
                     <h3 class="footheader" id="navigate">Navigate</h3>
                     <li class="mainlink">Home</li>
-                    <li class="mainlink">Crabitat Combo</li>
-                    <li class="mainlink">Blog</li>
+                    <li class="mainlink">Our Games</li>
                     <li class="mainlink">Events</li>
                     <li class="mainlink">About</li>
+                    <li class="mainlink">Contact</li>
                 </ul>
             </div>
-            <div class="newsletter">
-                <h2 class="footheader">Join our Newsletter</h2> <br>
-                <input type="email" required placeholder="crabby@oceanmail.com" class="emailinput"> <br>
-                <button class="newsbutton">Submit</button>
-            </div>
+            <form class="newsletter"
+                  id="newsletterForm"
+                  action="https://assets.mailerlite.com/jsonp/977502/forms/174857015025207100/subscribe"
+                  method="post"
+                  target="ml_iframe">
+
+                <h2 class="footheader">Join our Newsletter</h2><br>
+
+                <input type="email" name="fields[email]" required placeholder="crabby@oceanmail.com" class="emailinput"><br>
+
+                <button class="newsbutton" type="submit">Submit</button>
+
+                <input type="hidden" name="ml-submit" value="1">
+                <input type="hidden" name="anticsrf" value="true">
+            </form>
+
             <div class="socials">
                 <h3 class="footheader">Follow us on</h3>
                 <h3 class="footheader">Social Media</h3>
@@ -121,5 +141,12 @@
 
         <script src="index.js"></script>
     </main>
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+            alert("Thanks for subscribing! 🦀");
+            e.target.reset();
+        });
+    </script>
+
 </body>
 </html>
